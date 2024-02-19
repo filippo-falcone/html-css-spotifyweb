@@ -64,15 +64,31 @@ footer {
 /* #region MAIN */
 aside {
     width: 232px;
+    padding: 1.25rem 1.25rem 0;
 }
 
-aside nav img {
-    max-width: 15%;
+aside nav img,
+aside .download img,
+aside .account img {
     vertical-align: middle;
+}
+
+aside .logo-small,
+aside nav img {
+    max-width: 1.7rem;
+}
+
+aside .download img,
+aside .account img {
+    max-width: 1rem;
 }
 
 aside .playlist {
     overflow-y: auto;
+}
+
+aside .mobile-only {
+    display: none;
 }
 
 .content {
@@ -94,6 +110,9 @@ aside .playlist {
 /* #endregion */
 
 /* #region TYPOGRAPHY */
+body {
+    font-family: "PT Sans", sans-serif;
+}
 
 /* #endregion */
 
@@ -108,10 +127,37 @@ aside .playlist {
 
 /* #endregion */
 
-/* #region SCHERMO 1100px */
+/* #region SCHERMO 700px */
 @media screen and (max-width:700px) {
     .content .col {
         width: calc(100% / 2 - 1.25rem)
+    }
+}
+
+/* #endregion */
+
+/* #region SCHERMO 600px */
+@media screen and (max-width:600px) {
+    aside {
+        width: 50px;
+        padding: 0.25rem 0.625rem;
+    }
+
+    aside .mobile-only {
+        display: inline-block;
+    }
+
+    aside .desk-only {
+        display: none;
+    }
+
+    aside .download,
+    aside .account {
+        padding: 0 0.625rem 0;
+    }
+
+    .content {
+        width: calc(100% - 50px);
     }
 }
 
