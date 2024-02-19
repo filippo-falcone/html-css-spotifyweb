@@ -8,3 +8,115 @@
 }
 
 /* #endregion */
+
+/* #region DEBUG */
+
+.debug>main {
+    background-color: lightcoral;
+}
+
+.debug aside {
+    background-color: lightblue;
+}
+
+.debug aside .logo {
+    background-color: black;
+}
+
+.debug aside nav {
+    background-color: lightsalmon;
+}
+
+.debug aside .playlist {
+    background-color: lightgreen;
+}
+
+.debug .upgrade {
+    background-color: lightgoldenrodyellow;
+}
+
+.debug footer {
+    background: lightpink;
+}
+
+/* #endregion */
+
+/* #region GENERAL */
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+main {
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+}
+
+footer {
+    height: 90px;
+}
+
+/* #endregion */
+
+/* #region MAIN */
+aside {
+    width: 232px;
+}
+
+aside nav img {
+    max-width: 15%;
+    vertical-align: middle;
+}
+
+aside .playlist {
+    overflow-y: auto;
+}
+
+.content {
+    width: calc(100% - 232px)
+}
+
+.content .upgrade {
+    height: 90px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.content .col {
+    width: calc(100% / 6 - 1.25rem);
+}
+
+/* #endregion */
+
+/* #region TYPOGRAPHY */
+
+/* #endregion */
+
+/* #region RESPONSIVE */
+
+/* #region SCHERMO 1100px */
+@media screen and (max-width:1100px) {
+    .content .col {
+        width: calc(100% / 4 - 1.25rem)
+    }
+}
+
+/* #endregion */
+
+/* #region SCHERMO 1100px */
+@media screen and (max-width:700px) {
+    .content .col {
+        width: calc(100% / 2 - 1.25rem)
+    }
+}
+
+/* #endregion */
+
+/* #endregion */
+
+/* #endregion */
