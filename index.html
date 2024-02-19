@@ -18,50 +18,53 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="debug">
+<body>
     <main class="d-flex flex-wrap">
-        <aside class="d-flex flex-direction-column">
-            <div class="logo">
-                <img class="loo-big desk-only" src="img/logo.svg" alt="Spotify Logo">
+        <aside class="bg-black  text-darkgrey d-flex flex-direction-column">
+            <div class="logo mb-15">
+                <img class="logo-big desk-only" src="img/logo.svg" alt="Spotify Logo">
                 <img class="logo-small mobile-only" src="img/logo-small.svg" alt="Spotify Logo">
             </div>
             <nav>
-                <ul>
-                    <li><img src="img/home.svg" alt="Tasto Home"> <a class="desk-only" href="#">Home</a></li>
-                    <li><img src="img/search.svg" alt="Tasto Cerca"> <a class="desk-only" href="#">Cerca</a></li>
+                <ul class="mb-2">
+                    <li class="mb-075"><img src="img/home.svg" alt="Tasto Home"> <a class="desk-only" href="#">Home</a>
+                    </li>
+                    <li class="mb-075"><img src="img/search.svg" alt="Tasto Cerca"> <a class="desk-only"
+                            href="#">Cerca</a></li>
                     <li><img src="img/libreria.svg" alt="Tasto Libreria"> <a class="desk-only" href="#">La tua
                             libreria</a></li>
                 </ul>
             </nav>
             <div class="playlist flex-grow-1">
+                <div class="mb-1 text-transform-uppercase text-white desk-only">playlist</div>
                 <ul class="desk-only">
-                    <div class="text-transform-uppercase">playlist</div>
-                    <li><a href="#">Crea Playlist</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
-                    <li><a href="#">Lorem</a></li>
+                    <li class="mb-1"><a href="#">Crea Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li class="mb-1"><a href="#">Nome Playlist</a></li>
+                    <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </div>
             <div class="download">
                 <img src="img/download.svg" alt="Download icon">
-                <span class="desk-only">Installa app</span>
+                <span class="ml-05 desk-only">Installa app</span>
             </div>
+            <hr class="my-075 desk-only">
             <div class="account flex-shrink-0">
                 <img src="img/profile.svg" alt="Profile icon">
-                <span class="desk-only">Jhon Doe</span>
+                <span class="ml-05 text-white desk-only">Jhon Doe</span>
             </div>
         </aside>
-        <section class="content">
-            <div class="upgrade d-flex justify-content-flex-end align-items-center">
+        <section class="content bg-darkblue">
+            <div class="upgrade bg-trasparent-05 d-flex justify-content-flex-end align-items-center">
                 <button class="btn">Effettua Upgrade</button>
             </div>
             <div class="card-container px-125 py-125">
                 <nav class="container-m mx-auto">
-                    <ul class="d-flex flex-wrap gap-15">
+                    <ul class="d-flex flex-wrap gap-15 text-grey">
                         <li class="text-transform-uppercase"><a href="#"></a>in evidenza</li>
                         <li class="text-transform-uppercase"><a href="#"></a>podcast</li>
                         <li class="text-transform-uppercase"><a href="#"></a>classifiche</li>
@@ -70,49 +73,14 @@
                         <li class="text-transform-uppercase"><a href="#"></a>scopri</li>
                     </ul>
                 </nav>
-                <div class="recently-played">
-                    <h3>Recently played</h3>
+                <div class="recently-played mt-3 text-white">
+                    <h3 class="mb-2">Recently played</h3>
                     <div class="row d-flex flex-wrap gap-0625">
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="">
-                                <h4>Lorem Ipsum</h4>
-                                <div>Subtitle</div>
+                                <img class="mb-075" src="img/metal_lifting.jpg" alt="">
+                                <h4 class="mb-075">Heavy Metal</h4>
+                                <div class="text-grey">Subtitle</div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +88,7 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="bg-darkgrey"></footer>
 </body>
 
 </html>

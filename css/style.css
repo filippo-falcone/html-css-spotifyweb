@@ -50,6 +50,11 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
 main {
     height: calc(100vh - 90px);
     overflow-y: auto;
@@ -64,7 +69,11 @@ footer {
 /* #region MAIN */
 aside {
     width: 232px;
-    padding: 1.25rem 1.25rem 0;
+    padding: 1.25rem 1.25rem 0.5rem;
+}
+
+aside .logo-big {
+    max-width: 7.5rem;
 }
 
 aside nav img,
@@ -112,6 +121,7 @@ aside .mobile-only {
 /* #region TYPOGRAPHY */
 body {
     font-family: "PT Sans", sans-serif;
+    font-size: 12px;
 }
 
 /* #endregion */
