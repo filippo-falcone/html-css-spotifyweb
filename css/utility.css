@@ -144,6 +144,9 @@
 /*  #endregion */
 
 /* #region MARGIN */
+.mt-15 {
+    margin-top: 1.5rem;
+}
 
 .mt-2 {
     margin-top: 2rem;

@@ -173,6 +173,11 @@ aside .mobile-only {
     line-height: 1rem;
 }
 
+
+.popular-artist .card img {
+    border-radius: 50%;
+}
+
 /* #endregion */
 
 /* #region RESPONSIVE */
