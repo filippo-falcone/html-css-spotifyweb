@@ -109,6 +109,7 @@ aside .playlist button i {
 aside {
     width: 232px;
     padding: 1.25rem 1.25rem 0.5rem;
+    overflow-y: hidden;
 }
 
 aside .logo-big {
