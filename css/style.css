@@ -60,7 +60,7 @@ a:visited {
 }
 
 main {
-    height: calc(100vh - 90px);
+    height: calc(100dvh - 90px);
 }
 
 footer {
@@ -417,6 +417,31 @@ footer .advance-bar:hover .d-none {
     .multimedia-btn>:nth-child(2)>i {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
+    }
+}
+
+/* #endregion */
+
+/* #region SCHERMO 530px */
+@media screen and (max-width:530px) {
+
+    .current-song .current-text,
+    .multimedia .btn:not(:last-child) {
+        display: none;
+    }
+
+    footer i {
+        font-size: 0.75rem;
+    }
+
+    .player-central .play-btn i {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
+        font-size: 1.25rem;
+    }
+
+    .multimedia .time-bar {
+        width: 46px;
     }
 }
 
