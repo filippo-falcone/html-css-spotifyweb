@@ -386,12 +386,15 @@ footer .advance-bar:hover .d-none {
     }
 
     aside .download {
+        margin-bottom: 0;
         padding-bottom: 1rem;
+        padding-right: 0.175rem;
         text-align: center;
     }
 
     aside .account {
-        padding-left: 0.25rem;
+        margin-top: 0;
+        padding-left: 0.175rem;
     }
 
     .content {
@@ -438,6 +441,7 @@ footer .advance-bar:hover .d-none {
         margin-left: 0.25rem;
         margin-right: 0.25rem;
         font-size: 1.25rem;
+        vertical-align: 20%;
     }
 
     .multimedia .time-bar {
