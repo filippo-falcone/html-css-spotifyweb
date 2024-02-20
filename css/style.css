@@ -69,6 +69,7 @@ footer {
 /* #region MAIN */
 aside {
     width: 232px;
+    height: 100%;
     padding: 1.25rem 1.25rem 0.5rem;
 }
 
