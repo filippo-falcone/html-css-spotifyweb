@@ -204,7 +204,11 @@ aside .mobile-only {
 @media screen and (max-width:600px) {
     aside {
         width: 50px;
-        padding: 0.25rem 0.625rem;
+        padding: 0.5rem 0.75rem 0.5rem 0.625rem;
+    }
+
+    aside .logo {
+        margin-bottom: 0.75rem;
     }
 
     aside .mobile-only {
