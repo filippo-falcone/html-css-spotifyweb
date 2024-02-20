@@ -55,12 +55,38 @@ a {
     cursor: pointer;
 }
 
+a:visited {
+    color: #6f6f6f;
+}
+
 main {
     height: calc(100vh - 90px);
 }
 
 footer {
     height: 90px;
+}
+
+/* #endregion */
+
+/* #region TYPOGRAPHY */
+body,
+.btn {
+    font-family: "PT Sans", sans-serif;
+    font-size: 12px;
+}
+
+aside .playlist button i {
+    font-size: 2rem;
+}
+
+/* #endregion */
+
+/* #region BUTTON */
+.btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 /* #endregion */
@@ -86,13 +112,13 @@ aside nav img {
     max-width: 1.7rem;
 }
 
+aside .playlist {
+    overflow-y: auto;
+}
+
 aside .download img,
 aside .account img {
     max-width: 1rem;
-}
-
-aside .playlist {
-    overflow-y: auto;
 }
 
 aside .mobile-only {
@@ -114,14 +140,6 @@ aside .mobile-only {
 
 .content .col {
     width: calc(100% / 6 - 1.25rem);
-}
-
-/* #endregion */
-
-/* #region TYPOGRAPHY */
-body {
-    font-family: "PT Sans", sans-serif;
-    font-size: 12px;
 }
 
 /* #endregion */
