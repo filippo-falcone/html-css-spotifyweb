@@ -323,12 +323,25 @@ aside .download img:hover {
         width: calc(100% - 50px);
     }
 
+    .current-song {
+        gap: 0.5rem;
+    }
+
+    .player-central .player-bar {
+        gap: 0.25rem
+    }
+
     .player-bar .time-bar {
         width: 130px;
     }
 
     .multimedia .time-bar {
         width: 86px;
+    }
+
+    .multimedia-btn>:nth-child(2)>i {
+        margin-left: 0.25rem;
+        margin-right: 0.25rem;
     }
 }
 
