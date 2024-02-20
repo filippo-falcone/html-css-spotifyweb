@@ -73,11 +73,20 @@ footer {
 body,
 .btn {
     font-family: "PT Sans", sans-serif;
-    font-size: 12px;
+}
+
+aside,
+.content .btn-big,
+.content .subtitle {
+    font-size: 0.75rem;
 }
 
 aside .playlist button i {
     font-size: 2rem;
+}
+
+.content nav {
+    font-size: 0.875rem;
 }
 
 /* #endregion */
@@ -89,9 +98,14 @@ aside .playlist button i {
     cursor: pointer;
 }
 
+.btn-big {
+    border: 1px solid #ffffff;
+    border-radius: 3rem;
+}
+
 /* #endregion */
 
-/* #region MAIN */
+/* #region BARRA LATERALE */
 aside {
     width: 232px;
     padding: 1.25rem 1.25rem 0.5rem;
@@ -135,6 +149,9 @@ aside .mobile-only {
     display: none;
 }
 
+/* #endregion */
+
+/* #region CONTENUTO APP */
 .content {
     width: 100%;
     overflow-y: auto;
@@ -150,6 +167,10 @@ aside .mobile-only {
 
 .content .col {
     width: calc(100% / 6 - 1.25rem);
+}
+
+.recently-played {
+    line-height: 1rem;
 }
 
 /* #endregion */

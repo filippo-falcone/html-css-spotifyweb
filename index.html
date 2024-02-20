@@ -25,7 +25,9 @@
 
 <body>
     <main class="d-flex">
+        <!-- barra laterale -->
         <aside class="bg-black text-darkgrey d-flex flex-direction-column">
+            <!-- logo e nav -->
             <div class="logo mb-15">
                 <img class="logo-big desk-only" src="img/logo.svg" alt="Spotify Logo">
                 <img class="logo-small mobile-only" src="img/logo-small.svg" alt="Spotify Logo">
@@ -42,6 +44,8 @@
                             libreria</a></li>
                 </ul>
             </nav>
+            <!-- /logo e nav -->
+            <!-- playlist -->
             <div class="playlist flex-grow-1">
                 <div class="mb-1 text-transform-uppercase text-white pt-sans-bold desk-only">playlist</div>
                 <button class="btn mb-1 text-darkgrey d-flex desk-only"><i
@@ -58,6 +62,8 @@
                     <li><a href="#">Nome Playlist</a></li>
                 </ul>
             </div>
+            <!-- /playlist -->
+            <!-- download e account -->
             <button class="btn download text-darkgrey text-align-left">
                 <img class="filter-darkgrey" src="img/download.svg" alt="Download icon">
                 <span class="ml-05 desk-only">Installa app</span>
@@ -69,14 +75,21 @@
                 </div>
                 <span class="ml-05 text-white pt-sans-bold desk-only">Filippo Falcone</span>
             </div>
+            <!-- /download e account -->
         </aside>
+        <!-- /barra laterale -->
+        <!-- contenuto app -->
         <section class="content bg-darkblue">
-            <div class="upgrade bg-trasparent-05 d-flex justify-content-flex-end align-items-center">
-                <button class="btn text-white">Effettua Upgrade</button>
+            <!-- barra superiore fixed -->
+            <div class="upgrade px-125 bg-trasparent-05 d-flex justify-content-flex-end align-items-center">
+                <button class="btn btn-big px-2 py-05 text-transform-uppercase pt-sans-bold text-white">effettua
+                    l'upgrade</button>
             </div>
-            <div class="card-container px-125 py-125">
+            <!-- /barra superiore fixed -->
+            <div class="container-app px-125 py-125 pt-sans-bold">
+                <!-- nav contenuto -->
                 <nav class="container-m mx-auto">
-                    <ul class="d-flex flex-wrap gap-15 text-grey">
+                    <ul class="d-flex flex-wrap justify-content-center gap-15 text-grey">
                         <li class="text-transform-uppercase"><a href="#"></a>in evidenza</li>
                         <li class="text-transform-uppercase"><a href="#"></a>podcast</li>
                         <li class="text-transform-uppercase"><a href="#"></a>classifiche</li>
@@ -85,20 +98,59 @@
                         <li class="text-transform-uppercase"><a href="#"></a>scopri</li>
                     </ul>
                 </nav>
-                <div class="recently-played mt-3 text-white">
-                    <h3 class="mb-2">Recently played</h3>
-                    <div class="row d-flex flex-wrap gap-0625">
+                <!-- /nav contenuto -->
+                <!-- riprodotti di recente -->
+                <div class="recently-played mt-2 text-white">
+                    <h1 class="mb-15">Recently played</h1>
+                    <div class="row d-flex flex-wrap gap-1">
                         <div class="col">
                             <div class="card text-align-center">
-                                <img class="mb-075" src="img/metal_lifting.jpg" alt="">
-                                <h4 class="mb-075">Heavy Metal</h4>
-                                <div class="text-grey">Subtitle</div>
+                                <img src="img/metal_lifting.jpg" alt="Album Metallica">
+                                <h4 class="my-075">Heavy Metal</h4>
+                                <small class="subtitle text-grey">Subtitle</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-align-center">
+                                <img src="img/stranger.jpeg" alt="Stranger Things">
+                                <h4 class="my-075">Strange Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                <small class="subtitle text-grey">Kyle Dixon & Michael Stein</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-align-center">
+                                <img src="img/aquietplace.jpeg" alt="A Quiet Place">
+                                <h4 class="my-075">A quiet place</h4>
+                                <small class="subtitle text-grey">Subtitle</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-align-center">
+                                <img src="img/split.jpeg" alt="Split">
+                                <h4 class="my-075">Split</h4>
+                                <small class="subtitle text-grey">Subtitle</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-align-center">
+                                <img src="img/cure.jpeg" alt="A Cure for Wellness">
+                                <h4 class="my-075">A cure for wellness</h4>
+                                <small class="subtitle text-grey">Subtitle</small>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-align-center">
+                                <img src="img/sinister.jpeg" alt="Sinister">
+                                <h4 class="my-075">Sinister</h4>
+                                <small class="subtitle text-grey">Subtitle</small>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- /riprodotti di recente -->
             </div>
         </section>
+        <!-- /contenuto app -->
     </main>
     <footer class="bg-darkgrey"></footer>
 </body>
