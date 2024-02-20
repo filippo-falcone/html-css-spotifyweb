@@ -100,7 +100,7 @@ aside .mobile-only {
 }
 
 .content {
-    width: calc(100% - 232px);
+    width: 100%;
     overflow-y: auto;
 }
 
