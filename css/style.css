@@ -194,6 +194,10 @@ aside .download img {
     max-width: 1rem;
 }
 
+aside hr {
+    margin-bottom: -0.125rem;
+}
+
 aside .account-circle {
     width: 1.5rem;
     height: 1.5rem;

@@ -62,6 +62,10 @@
     padding-top: 2.5rem;
 }
 
+.pb-075 {
+    padding-bottom: 0.75rem;
+}
+
 .pb-125 {
     padding-bottom: 1.25rem;
 }
@@ -153,6 +157,10 @@
 /*  #endregion */
 
 /* #region MARGIN */
+.mt-075 {
+    margin-top: 0.75rem;
+}
+
 .mt-15 {
     margin-top: 1.5rem;
 }
