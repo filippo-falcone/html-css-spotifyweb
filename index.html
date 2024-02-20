@@ -271,14 +271,16 @@
             <div class="player-btn d-flex justify-content-center gap-1">
                 <button class="btn text-white"><i class="fa-solid fa-shuffle"></i></button>
                 <button class="btn text-white"><i class="fa-solid fa-backward-step"></i></button>
-                <button class="btn text-white"><i class="fa-regular fa-circle-play mx-1"></i></button>
+                <button class="play-btn btn text-white"><i class="fa-regular fa-circle-play mx-1"></i></button>
                 <button class="btn text-white"><i class="fa-solid fa-forward-step"></i></button>
                 <button class="btn text-white"><i class="fa-solid fa-arrow-rotate-right"></i></button>
             </div>
             <div class="player-bar text-white d-flex align-items-center gap-1 pt-sans-bold">
                 <div>0:25</div>
                 <div class="time-bar border-radius-1 bg-grey">
-                    <div class="advance-bar border-radius-1 bg-lightlightgrey"></div>
+                    <div class="advance-bar border-radius-1 bg-lightlightgrey d-flex justify-content-flex-end">
+                        <div class="bar-circle bg-lightlightgrey d-none"></div>
+                    </div>
                 </div>
                 <div>4:35</div>
             </div>
@@ -292,7 +294,9 @@
                 <button class="btn text-white"><i class="fa-solid fa-volume-high"></i></button>
             </div>
             <div class="time-bar border-radius-1 bg-grey">
-                <div class="advance-bar border-radius-1 bg-lightlightgrey"></div>
+                <div class="advance-bar border-radius-1 bg-lightlightgrey d-flex justify-content-flex-end">
+                    <div class="bar-circle bg-lightlightgrey d-none"></div>
+                </div>
             </div>
         </div>
         <!-- /player right -->

@@ -96,7 +96,7 @@ aside,
 }
 
 aside .playlist button i,
-.player-btn>:nth-child(3) {
+.player-btn>.play-btn {
     font-size: 2rem;
 }
 
@@ -226,6 +226,13 @@ aside .mobile-only {
     height: 100%;
 }
 
+.bar-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50rem;
+    transform: translateY(-30%);
+}
+
 .multimedia .time-bar {
     width: 120px;
 }
@@ -246,10 +253,28 @@ aside .download img:hover {
     filter: invert(0) sepia(0%) saturate(7465%) hue-rotate(53deg) brightness(98%) contrast(124%);
 }
 
+.content .upgrade .btn-big:hover,
+.play-btn i:hover {
+    transform: scale(1.1);
+}
+
 .card:hover .d-none {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .current-text small:hover {
+    text-decoration: underline;
+}
+
+footer .advance-bar:hover {
+    background-color: #adff2f;
+}
+
+footer .advance-bar:hover .d-none {
+    display: inline-block;
+    cursor: pointer;
 }
 
 /* #endregion */
