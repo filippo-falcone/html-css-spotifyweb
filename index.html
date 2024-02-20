@@ -33,7 +33,7 @@
                 <img class="logo-small mobile-only" src="img/logo-small.svg" alt="Spotify Logo">
             </div>
             <nav>
-                <ul class="mb-1 text-darkgrey">
+                <ul class="mb-1 text-darkgrey pt-sans-bold">
                     <li class="mb-075"><img class="filter-darkgrey" src="img/home.svg" alt="Tasto Home"> <a
                             class="desk-only" href="#">Home</a>
                     </li>
@@ -46,9 +46,9 @@
             </nav>
             <!-- /logo & nav -->
             <!-- playlist -->
-            <div class="playlist flex-grow-1">
+            <div class="playlist flex-grow-1 pt-sans-bold">
                 <div class="mb-1 text-transform-uppercase text-white pt-sans-bold desk-only">playlist</div>
-                <button class="btn mb-1 text-darkgrey d-flex desk-only"><i
+                <button class="btn mb-1 text-darkgrey d-flex pt-sans-bold desk-only"><i
                         class="fa-sharp fa-solid fa-square-plus text-lightgrey"></i>
                     <span class="align-self-center ml-05">Crea Playlist</span>
                 </button>
@@ -64,7 +64,7 @@
             </div>
             <!-- /playlist -->
             <!-- download & account -->
-            <button class="btn download text-darkgrey text-align-left">
+            <button class="download btn text-darkgrey text-align-left pt-sans-bold">
                 <img class="filter-darkgrey" src="img/download.svg" alt="Download icon">
                 <span class="ml-05 desk-only">Installa app</span>
             </button>
@@ -78,7 +78,7 @@
             <!-- /download & account -->
         </aside>
         <!-- /aside left -->
-        <!-- content app -->
+        <!-- content -->
         <section class="content bg-darkblue">
             <!-- fixed bar -->
             <div class="upgrade px-125 bg-trasparent-05 d-flex justify-content-flex-end align-items-center">
@@ -86,6 +86,7 @@
                     l'upgrade</button>
             </div>
             <!-- /fixed bar -->
+            <!-- app -->
             <div class="container-app px-125 py-125 pt-sans-bold">
                 <!-- content nav -->
                 <nav class="container-m mx-auto">
@@ -105,42 +106,84 @@
                     <div class="row d-flex flex-wrap gap-1">
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/metal_lifting.jpg" alt="Album Metallica">
+                                <div class="img-container">
+                                    <img src="img/metal_lifting.jpg" alt="Album Metallica">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Heavy Metal</h4>
                                 <small class="subtitle text-grey">Subtitle</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/stranger.jpeg" alt="Stranger Things">
+                                <div class="img-container">
+                                    <img src="img/stranger.jpeg" alt="Stranger Things">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Strange Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
                                 <small class="subtitle text-grey">Kyle Dixon & Michael Stein</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/aquietplace.jpeg" alt="A Quiet Place">
+                                <div class="img-container">
+                                    <img src="img/aquietplace.jpeg" alt="A Quiet Place">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">A quiet place</h4>
                                 <small class="subtitle text-grey">Subtitle</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/split.jpeg" alt="Split">
+                                <div class="img-container">
+                                    <img src="img/split.jpeg" alt="Split">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Split</h4>
                                 <small class="subtitle text-grey">Subtitle</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/cure.jpeg" alt="A Cure for Wellness">
+                                <div class="img-container">
+                                    <img src="img/cure.jpeg" alt="A Cure for Wellness">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">A cure for wellness</h4>
                                 <small class="subtitle text-grey">Subtitle</small>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/sinister.jpeg" alt="Sinister">
+                                <div class="img-container">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Sinister</h4>
                                 <small class="subtitle text-grey">Subtitle</small>
                             </div>
@@ -155,13 +198,27 @@
                     <div class="row mt-15 d-flex flex-wrap gap-1">
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/radar.jpeg" alt="Radar Release">
+                                <div class="img-container">
+                                    <img src="img/radar.jpeg" alt="Radar Release">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Release Radar</h4>
                             </div>
                         </div>
                         <div class="col">
                             <div class="card text-align-center">
-                                <img src="img/mixdaily.jpeg" alt="Mix del giorno">
+                                <div class="img-container">
+                                    <img src="img/mixdaily.jpeg" alt="Mix del giorno">
+                                    <div class="play bg-trasparent-02 d-none">
+                                        <button class="btn text-white d-none">
+                                            <i class="fa-regular fa-circle-play"></i>
+                                        </button>
+                                    </div>
+                                </div>
                                 <h4 class="my-075">Daily Mix 1</h4>
                             </div>
                         </div>
@@ -189,8 +246,9 @@
                 </div>
                 <!-- /popular artist -->
             </div>
+            <!-- /app -->
         </section>
-        <!-- /content app -->
+        <!-- /content -->
     </main>
     <footer class="bg-darkgrey px-0625 d-flex justify-content-between align-items-center">
         <!-- player left -->

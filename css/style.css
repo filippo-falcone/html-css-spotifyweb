@@ -67,6 +67,18 @@ footer {
     height: 90px;
 }
 
+.img-container {
+    position: relative;
+}
+
+.play {
+    width: 100%;
+    height: calc(100% - 4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 /* #endregion */
 
 /* #region TYPOGRAPHY */
@@ -90,6 +102,10 @@ aside .playlist button i,
 
 .content nav {
     font-size: 0.875rem;
+}
+
+.play>.btn {
+    font-size: 3rem;
 }
 
 .player-btn>:not(:nth-child(3)) {
@@ -181,7 +197,6 @@ aside .mobile-only {
     line-height: 1rem;
 }
 
-
 .popular-artist .card img {
     border-radius: 50%;
 }
@@ -213,6 +228,28 @@ aside .mobile-only {
 
 .multimedia .time-bar {
     width: 120px;
+}
+
+/* #endregion */
+
+/* #region HOVER */
+aside li :hover,
+aside .btn :hover,
+.content nav li:hover,
+footer .current-text small:hover,
+footer .current-right :hover {
+    color: #ffffff;
+}
+
+aside nav img:hover,
+aside .download img:hover {
+    filter: invert(0) sepia(0%) saturate(7465%) hue-rotate(53deg) brightness(98%) contrast(124%);
+}
+
+.card:hover .d-none {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* #endregion */

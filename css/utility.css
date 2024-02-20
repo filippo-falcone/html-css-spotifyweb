@@ -289,6 +289,10 @@
     background-color: #141922;
 }
 
+.bg-trasparent-02 {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 .bg-trasparent-05 {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -310,6 +314,10 @@
 /* #region DISPLAY */
 .d-flex {
     display: flex;
+}
+
+.d-none {
+    display: none;
 }
 
 /* #endregion */
