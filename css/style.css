@@ -116,9 +116,19 @@ aside .playlist {
     overflow-y: auto;
 }
 
-aside .download img,
-aside .account img {
+aside .download img {
     max-width: 1rem;
+}
+
+aside .account-circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+aside .account-circle>img {
+    object-fit: contain;
 }
 
 aside .mobile-only {
@@ -179,9 +189,13 @@ aside .mobile-only {
         display: none;
     }
 
-    aside .download,
+    aside .download {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+
     aside .account {
-        padding: 0 0.625rem 0;
+        padding-left: 0.25rem;
     }
 
     .content {

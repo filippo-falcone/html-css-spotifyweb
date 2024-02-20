@@ -269,6 +269,10 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.bg-grey {
+    background-color: #808080;
+}
+
 /* #endregion */
 
 /* #region DISPLAY */
