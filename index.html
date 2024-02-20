@@ -34,14 +34,27 @@
             </div>
             <nav>
                 <ul class="mb-1 text-darkgrey pt-sans-bold">
-                    <li class="mb-075"><img class="filter-darkgrey" src="img/home.svg" alt="Tasto Home"> <a
-                            class="desk-only" href="#">Home</a>
+                    <li class="mb-075">
+                        <input type="radio" name="nav-aside" id="home">
+                        <label for="home" class="px-125">
+                            <img class="filter-darkgrey" src="img/home.svg" alt="Tasto Home">
+                            <a class="desk-only" href="#">Home</a>
+                        </label>
+                        </label>
                     </li>
-                    <li class="mb-075"><img class="filter-darkgrey" src="img/search.svg" alt="Tasto Cerca"> <a
-                            class="desk-only" href="#">Cerca</a></li>
-                    <li><img class="filter-darkgrey" src="img/libreria.svg" alt="Tasto Libreria"> <a class="desk-only"
-                            href="#">La tua
-                            libreria</a></li>
+                    <li class="mb-075">
+                        <input type="radio" name="nav-aside" id="search">
+                        <label for="search" class="px-125">
+                            <img class="filter-darkgrey" src="img/search.svg" alt="Tasto Cerca">
+                            <a class="desk-only" href="#">Cerca</a>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" name="nav-aside" id="library">
+                        <label for="library" class="px-125">
+                            <img class="filter-darkgrey" src="img/libreria.svg" alt="Tasto Libreria">
+                            <a class="desk-only" href="#">La tua libreria</a>
+                    </li>
                 </ul>
             </nav>
             <!-- /logo & nav -->
@@ -91,12 +104,42 @@
                 <!-- content nav -->
                 <nav class="container-m mx-auto">
                     <ul class="d-flex flex-wrap justify-content-center gap-15 text-grey">
-                        <li class="text-transform-uppercase"><a href="#"></a>in evidenza</li>
-                        <li class="text-transform-uppercase"><a href="#"></a>podcast</li>
-                        <li class="text-transform-uppercase"><a href="#"></a>classifiche</li>
-                        <li class="text-transform-uppercase"><a href="#"></a>generi e mood</li>
-                        <li class="text-transform-uppercase"><a href="#"></a>nuove uscite</li>
-                        <li class="text-transform-uppercase"><a href="#"></a>scopri</li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="featured" checked>
+                            <label for="featured">
+                                <span>in evidenza</span>
+                            </label>
+                        </li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="podcast">
+                            <label for="podcast">
+                                <span>podcast</span>
+                            </label>
+                        </li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="charts">
+                            <label for="charts">
+                                <span>classifiche</span>
+                            </label>
+                        </li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="genre">
+                            <label for="genre">
+                                <span>generi e mood</span>
+                            </label>
+                        </li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="new">
+                            <label for="new">
+                                <span href="#">nuove uscite</span>
+                            </label>
+                        </li>
+                        <li class="text-transform-uppercase">
+                            <input type="radio" name="nav-content" id="discover">
+                            <label for="discover">
+                                <span>scopri</span>
+                            </label>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /content nav -->

@@ -104,6 +104,10 @@ aside .playlist button i,
     font-size: 0.875rem;
 }
 
+.content nav span {
+    cursor: pointer;
+}
+
 .play>.btn {
     font-size: 3rem;
 }
@@ -124,6 +128,38 @@ aside .playlist button i,
 .btn-big {
     border: 1px solid #ffffff;
     border-radius: 3rem;
+}
+
+/* #endregion */
+
+/* #region INPUT */
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    display: block;
+    position: relative;
+}
+
+aside label {
+    margin-left: -1.25rem;
+}
+
+aside input[type="radio"]:checked+label {
+    border-left: 2px solid #adff2f;
+}
+
+
+.content input[type="radio"]:checked+label::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #adff2f;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* #endregion */
@@ -242,7 +278,7 @@ aside .mobile-only {
 /* #region HOVER */
 aside li :hover,
 aside .btn :hover,
-.content nav li:hover,
+.content li span:hover,
 footer .current-text small:hover,
 footer .current-right :hover {
     color: #ffffff;
