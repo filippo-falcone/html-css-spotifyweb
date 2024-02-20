@@ -77,16 +77,23 @@ body,
 
 aside,
 .content .btn-big,
-.content .subtitle {
+.content .subtitle,
+.current-text,
+.player-bar {
     font-size: 0.75rem;
 }
 
-aside .playlist button i {
+aside .playlist button i,
+.player-btn>:nth-child(3) {
     font-size: 2rem;
 }
 
 .content nav {
     font-size: 0.875rem;
+}
+
+.player-btn>:not(:nth-child(3)) {
+    font-size: 1.125rem;
 }
 
 /* #endregion */
@@ -105,7 +112,7 @@ aside .playlist button i {
 
 /* #endregion */
 
-/* #region BARRA LATERALE */
+/* #region ASIDE LEFT */
 aside {
     width: 232px;
     padding: 1.25rem 1.25rem 0.5rem;
@@ -152,7 +159,7 @@ aside .mobile-only {
 
 /* #endregion */
 
-/* #region CONTENUTO APP */
+/* #region CONTENT APP */
 .content {
     width: 100%;
     overflow-y: auto;
@@ -181,6 +188,35 @@ aside .mobile-only {
 
 /* #endregion */
 
+/* #region FOOTER */
+.current-img {
+    width: 42px;
+    height: 42px;
+}
+
+.current-text {
+    line-height: 0.75rem;
+}
+
+.time-bar {
+    height: 4px;
+}
+
+.player-bar .time-bar {
+    width: 250px;
+}
+
+.advance-bar {
+    width: calc(100% / 5);
+    height: 100%;
+}
+
+.multimedia .time-bar {
+    width: 120px;
+}
+
+/* #endregion */
+
 /* #region RESPONSIVE */
 
 /* #region SCHERMO 1100px */
@@ -196,6 +232,23 @@ aside .mobile-only {
 @media screen and (max-width:700px) {
     .content .col {
         width: calc(100% / 2 - 1.25rem)
+    }
+
+    .current-right {
+        flex-direction: column;
+    }
+
+    .player-bar .time-bar {
+        width: 140px;
+    }
+
+    .multimedia .time-bar {
+        width: 100px;
+    }
+
+    .multimedia-btn>:nth-child(2)>i {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }
 
@@ -232,9 +285,15 @@ aside .mobile-only {
     .content {
         width: calc(100% - 50px);
     }
-}
 
-/* #endregion */
+    .player-bar .time-bar {
+        width: 130px;
+    }
+
+    .multimedia .time-bar {
+        width: 86px;
+    }
+}
 
 /* #endregion */
 

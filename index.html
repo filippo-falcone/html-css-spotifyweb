@@ -25,9 +25,9 @@
 
 <body>
     <main class="d-flex">
-        <!-- barra laterale -->
+        <!-- aside left -->
         <aside class="bg-black text-darkgrey d-flex flex-direction-column">
-            <!-- logo e nav -->
+            <!-- logo & nav -->
             <div class="logo mb-15">
                 <img class="logo-big desk-only" src="img/logo.svg" alt="Spotify Logo">
                 <img class="logo-small mobile-only" src="img/logo-small.svg" alt="Spotify Logo">
@@ -44,7 +44,7 @@
                             libreria</a></li>
                 </ul>
             </nav>
-            <!-- /logo e nav -->
+            <!-- /logo & nav -->
             <!-- playlist -->
             <div class="playlist flex-grow-1">
                 <div class="mb-1 text-transform-uppercase text-white pt-sans-bold desk-only">playlist</div>
@@ -63,31 +63,31 @@
                 </ul>
             </div>
             <!-- /playlist -->
-            <!-- download e account -->
+            <!-- download & account -->
             <button class="btn download text-darkgrey text-align-left">
                 <img class="filter-darkgrey" src="img/download.svg" alt="Download icon">
                 <span class="ml-05 desk-only">Installa app</span>
             </button>
             <hr class="my-075 desk-only">
             <div class="account d-flex flex-shrink-0">
-                <div class="account-circle text-align-center bg-grey">
+                <div class="account-circle text-align-center bg-lightgrey">
                     <img src="img/profile.svg" alt="Profile icon">
                 </div>
                 <span class="ml-05 text-white pt-sans-bold desk-only">Filippo Falcone</span>
             </div>
-            <!-- /download e account -->
+            <!-- /download & account -->
         </aside>
-        <!-- /barra laterale -->
-        <!-- contenuto app -->
+        <!-- /aside left -->
+        <!-- content app -->
         <section class="content bg-darkblue">
-            <!-- barra superiore fixed -->
+            <!-- fixed bar -->
             <div class="upgrade px-125 bg-trasparent-05 d-flex justify-content-flex-end align-items-center">
                 <button class="btn btn-big px-2 py-05 text-transform-uppercase pt-sans-bold text-white">effettua
                     l'upgrade</button>
             </div>
-            <!-- /barra superiore fixed -->
+            <!-- /fixed bar -->
             <div class="container-app px-125 py-125 pt-sans-bold">
-                <!-- nav contenuto -->
+                <!-- content nav -->
                 <nav class="container-m mx-auto">
                     <ul class="d-flex flex-wrap justify-content-center gap-15 text-grey">
                         <li class="text-transform-uppercase"><a href="#"></a>in evidenza</li>
@@ -98,8 +98,8 @@
                         <li class="text-transform-uppercase"><a href="#"></a>scopri</li>
                     </ul>
                 </nav>
-                <!-- /nav contenuto -->
-                <!-- riprodotti di recente -->
+                <!-- /content nav -->
+                <!-- rencently played -->
                 <div class="recently-played mt-2 text-white">
                     <h1 class="mb-15">Recently played</h1>
                     <div class="row d-flex flex-wrap gap-1">
@@ -147,8 +147,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- /riprodotti di recente -->
-                <!-- creato per -->
+                <!-- /rencently played -->
+                <!-- created for-->
                 <div class="created-for mt-2 text-white">
                     <h1>Creata per Filippo</h1>
                     <small class="subtitle text-grey">Più ascolti, più efficaci saranno i suggerimenti.</small>
@@ -167,8 +167,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- /creato per -->
-                <!-- artisti popolari -->
+                <!-- /created for-->
+                <!-- popular artist -->
                 <div class="popular-artist mt-2 text-white">
                     <h1>Artisti più Popolari</h1>
                     <small class="subtitle text-grey">Più ascolti, più efficaci saranno i suggerimenti.</small>
@@ -186,13 +186,59 @@
                             </div>
                         </div>
                     </div>
-                    <!-- /artisti popolari -->
                 </div>
+                <!-- /popular artist -->
             </div>
         </section>
-        <!-- /contenuto app -->
+        <!-- /content app -->
     </main>
-    <footer class="bg-darkgrey"></footer>
+    <footer class="bg-darkgrey px-0625 d-flex justify-content-between align-items-center">
+        <!-- player left -->
+        <div class="current-song d-flex align-items-center gap-075">
+            <div class="current-img">
+                <img src="img/player_left.jpg" alt="Hilltop Hoods">
+            </div>
+            <div class="current-text pt-sans-bold">
+                <div class="text-white">Hilltop Hoods</div>
+                <small class="text-darkgrey">Brano Nome</small>
+            </div>
+            <div class="current-right d-flex flex-wrap gap-075 text-grey">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
+        </div>
+        <!-- /player left -->
+        <!-- player central -->
+        <div class="player-central">
+            <div class="player-btn d-flex justify-content-center gap-1">
+                <button class="btn text-white"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btn text-white"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btn text-white"><i class="fa-regular fa-circle-play mx-1"></i></button>
+                <button class="btn text-white"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="btn text-white"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+            </div>
+            <div class="player-bar text-white d-flex align-items-center gap-1 pt-sans-bold">
+                <div>0:25</div>
+                <div class="time-bar border-radius-1 bg-grey">
+                    <div class="advance-bar border-radius-1 bg-lightlightgrey"></div>
+                </div>
+                <div>4:35</div>
+            </div>
+        </div>
+        <!-- /player central -->
+        <!-- player right -->
+        <div class="multimedia d-flex align-items-center gap-075">
+            <div class="multimedia-btn">
+                <button class="btn text-white"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="btn text-white"><i class="fa-solid fa-display mx-1"></i></button>
+                <button class="btn text-white"><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+            <div class="time-bar border-radius-1 bg-grey">
+                <div class="advance-bar border-radius-1 bg-lightlightgrey"></div>
+            </div>
+        </div>
+        <!-- /player right -->
+    </footer>
 </body>
 
 </html>
