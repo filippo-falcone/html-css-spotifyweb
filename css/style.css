@@ -55,8 +55,7 @@ a {
     cursor: pointer;
 }
 
-aside,
-.content {
+main {
     height: calc(100vh - 90px);
 }
 
