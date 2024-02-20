@@ -363,6 +363,16 @@ footer .advance-bar:hover .d-none {
         margin-bottom: 0.75rem;
     }
 
+    aside input[type="radio"]:checked+label {
+        border: none;
+    }
+
+    aside label.px-125 {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     aside .mobile-only {
         display: inline-block;
     }
