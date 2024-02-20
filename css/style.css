@@ -55,9 +55,9 @@ a {
     cursor: pointer;
 }
 
-main {
+aside,
+.content {
     height: calc(100vh - 90px);
-    overflow-y: auto;
 }
 
 footer {
@@ -69,7 +69,6 @@ footer {
 /* #region MAIN */
 aside {
     width: 232px;
-    height: 100%;
     padding: 1.25rem 1.25rem 0.5rem;
 }
 
@@ -102,7 +101,8 @@ aside .mobile-only {
 }
 
 .content {
-    width: calc(100% - 232px)
+    width: calc(100% - 232px);
+    overflow-y: auto;
 }
 
 .content .upgrade {
