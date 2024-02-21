@@ -358,17 +358,17 @@ aside .btn span,
 .content li span,
 footer .current-text small,
 footer .current-right i {
-    transition: 1.7s;
+    transition: 1s;
 }
 
 .content .upgrade .btn-big,
 .player-btn i,
 .multimedia-btn i {
-    transition: transform 1.2s;
+    transition: transform 1s;
 }
 
 .card .play {
-    transition: opacity 1.4s;
+    transition: opacity 1s;
 }
 
 footer .advance-bar {
