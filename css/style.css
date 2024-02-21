@@ -303,12 +303,17 @@ aside .download img:hover {
 }
 
 .content .upgrade .btn-big:hover,
-.play-btn i:hover {
+.player-btn i:hover,
+.multimedia-btn i:hover {
     transform: scale(1.1);
 }
 
 .card:hover .play {
     opacity: 1;
+}
+
+footer .current-right i:first-child:hover {
+    color: #ff0000;
 }
 
 footer .current-text small:hover {
@@ -330,17 +335,17 @@ footer .advance-bar:hover .bar-circle {
 /* #region SCROLLBAR*/
 aside .playlist-nav::-webkit-scrollbar,
 .content::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
 
 aside .playlist-nav::-webkit-scrollbar-thumb,
 .content::-webkit-scrollbar-thumb {
-    background-color: #adff2fff;
     border-radius: 20px;
+    background-color: #adff2f;
 }
 
 .content::-webkit-scrollbar-track {
-    margin: 2px 0;
+    margin: 4px 0;
 }
 
 /* #endregion */
@@ -352,12 +357,13 @@ aside .btn,
 aside .btn span,
 .content li span,
 footer .current-text small,
-footer .current-right {
-    transition: 1.5s;
+footer .current-right i {
+    transition: 1.7s;
 }
 
 .content .upgrade .btn-big,
-.play-btn i {
+.player-btn i,
+.multimedia-btn i {
     transition: transform 1.2s;
 }
 
