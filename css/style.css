@@ -60,8 +60,13 @@ main {
     height: calc(100dvh - 90px);
 }
 
+
 footer {
     height: 90px;
+}
+
+.content img {
+    display: block;
 }
 
 .img-container {
@@ -69,11 +74,15 @@ footer {
 }
 
 .play {
-    width: 100%;
-    height: calc(100% - 4px);
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
 }
 
 /* #endregion */
@@ -234,8 +243,9 @@ aside .mobile-only {
     line-height: 1rem;
 }
 
-.popular-artist .card img {
+.popular-artist .img-container {
     border-radius: 50%;
+    overflow: hidden;
 }
 
 /* #endregion */
@@ -295,10 +305,8 @@ aside .download img:hover {
     transform: scale(1.1);
 }
 
-.card:hover .d-none {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card:hover .play {
+    opacity: 1;
 }
 
 footer .current-text small:hover {
